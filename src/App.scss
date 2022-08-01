@@ -1,0 +1,13 @@
+$white: #ffffff;
+$lightGray: rgb(211, 211, 211);
+$backGray: #fafafa;
+
+* {
+	margin: 0;
+}
+
+.app {
+	background-color: $backGray;
+	max-height: 100vh;
+	overflow-y: scroll;
+}

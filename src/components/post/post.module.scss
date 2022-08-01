@@ -1,0 +1,33 @@
+@import '../../App.scss';
+
+.post {
+	max-width: 31.25rem;
+	background-color: $white;
+	border: 1px solid $lightGray;
+	margin-bottom: 2.8rem;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		padding: 1.25rem 0.625rem;
+	}
+
+	&__avatar {
+		margin-right: 1rem;
+	}
+
+	&__username {
+		font-size: 1.2rem;
+	}
+
+	&__img {
+		width: 100%;
+		object-fit: contain;
+		border-top: 1px solid $lightGray;
+		border-bottom: 1px solid $lightGray;
+	}
+
+	&__text {
+		font-weight: normal;
+	}
+}

@@ -1,0 +1,11 @@
+@import '../../App.scss';
+
+.header {
+	background-color: $white;
+	padding: 1.2rem 0rem;
+	border-bottom: 1px solid $lightGray;
+
+	&__logo {
+		object-fit: contain;
+	}
+}
