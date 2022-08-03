@@ -10,4 +10,10 @@ $backGray: #fafafa;
 	background-color: $backGray;
 	max-height: 100vh;
 	overflow-y: scroll;
+
+	&__signUp {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
 }
