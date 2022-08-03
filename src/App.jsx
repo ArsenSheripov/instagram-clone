@@ -6,6 +6,7 @@ import { auth, db } from './firebase';
 import BasicModal from './components/modal/BasicModal';
 import { Button, Input } from '@mui/material';
 import logo from './assets/logo.png';
+import ImageUpload from './components/imageUpload/ImageUpload';
 
 
 function App() {
@@ -64,6 +65,12 @@ function App() {
 	return (
 		<div className="app">
 			<Header />
+			{user?.displayName
+				?
+				<ImageUpload username={user.displayName} />
+				:
+				<h3>Sorry you need to login</h3>
+			}
 			<BasicModal
 				handleClose={() => setOpen(false)}
 				open={open}
@@ -122,7 +129,7 @@ function App() {
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
 					/>
-					<Button type='submit' onClick={signUp}>Sign Up</Button>
+					<Button type='submit' onClick={signIn}>Sign In</Button>
 				</form>
 			</BasicModal>
 			{user
